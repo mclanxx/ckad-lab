@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  APP_DEBUG: "false"
+  APP_MODE: prod
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: app-config

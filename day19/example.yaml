@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rollout
+spec:
+  strategy:
+    type: RollingUpdate
+  replicas: 2
+  selector:
+    matchLabels:
+      app: roll
+  template:
+    metadata:
+      labels:
+        app: roll
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+

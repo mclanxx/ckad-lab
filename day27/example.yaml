@@ -1,0 +1,9 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: imm
+immutable: true
+data:
+  key: value
+
