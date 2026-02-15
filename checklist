@@ -1,0 +1,171 @@
+🟢 GÜN 1 – Temel Pod ve kubectl
+
+Hedef: Imperative pod, log, exec, delete, dry-run YAML üretme
+
+Checklist / Görevler:
+
+☐ Cluster ve node kontrol
+☐ kubectl get nodes
+☐ Pod oluştur (imperative)
+☐ Pod listesini farklı formatlarda gör
+☐ Pod describe
+☐ Pod logs
+☐ Pod exec
+☐ Pod delete
+☐ Dry-run ile YAML üret
+☐ YAML’dan Pod oluştur
+
+
+Süre Planı: 10 / 40 / 10 dk
+
+🟡 GÜN 2 – Declarative Pod & Labels
+
+Hedef: YAML declarative pod, labels, selectors, kubectl explain
+
+Checklist / Görevler:
+
+☐ Pod YAML oluştur
+☐ Labels ekle
+☐ Label selector ile pod filtrele
+☐ Runtime label değiştir
+☐ kubectl explain kullan
+☐ Pod delete + recreate
+
+
+Süre Planı: 10 / 40 / 10 dk
+
+🟠 GÜN 3 – Multi-container Pod & Volumes
+
+Hedef: Sidecar, emptyDir, volumeMount
+
+Checklist / Görevler:
+
+☐ Multi-container pod YAML
+☐ Volume (emptyDir) ekle
+☐ Container’lara mount et
+☐ Log sidecar test et
+☐ Pod delete + recreate
+
+🔵 GÜN 4 – Resource Limits & Requests
+
+Hedef: requests/limits, OOM test
+
+☐ Pod CPU/memory requests & limits
+☐ Pod çalıştır ve logs kontrol
+☐ OOM senaryosu test
+☐ Delete + recreate
+
+🔴 GÜN 5 – Mini Deployment / Replica
+☐ Deployment YAML oluştur (2 replica)
+☐ kubectl rollout status
+☐ scale deployment
+☐ rollout undo
+
+🟣 GÜN 6 – ConfigMap
+☐ ConfigMap oluştur
+☐ Pod’a env ve volume mount et
+☐ Pod çalıştır, logs kontrol
+
+🟤 GÜN 7 – Secret
+☐ Secret oluştur
+☐ Pod’a env ve volume mount et
+☐ Pod çalıştır, secret verify
+
+🔶 GÜN 8 – Downward API
+☐ Pod metadata/env via downward API
+☐ Log test
+
+🔹 GÜN 9 – PV / PVC static
+☐ PersistentVolume YAML
+☐ PersistentVolumeClaim YAML
+☐ Pod’a mount et
+☐ Test data write/read
+
+🔸 GÜN 10 – RWX PV / PVC / Pod
+☐ RWX PV oluştur
+☐ PVC bind
+☐ Pod mount
+☐ Multi Pod RWX test
+
+🔺 GÜN 11 – Service ClusterIP / NodePort
+☐ Service ClusterIP YAML
+☐ NodePort YAML
+☐ Port-forward test
+
+🔻 GÜN 12 – Readiness / Liveness Probes
+☐ Pod readiness probe
+☐ Pod liveness probe
+☐ Test: fail pod → restart
+
+🔹 GÜN 13 – Ingress Basic
+☐ Nginx ingress controller (local test)
+☐ Basic ingress YAML
+
+🔸 GÜN 14 – Job
+☐ Job YAML
+☐ RestartPolicy test
+
+🔺 GÜN 15 – CronJob
+☐ CronJob YAML
+☐ Schedule test
+
+🔻 GÜN 16 – Logs & Debug
+☐ kubectl logs
+☐ kubectl exec
+☐ kubectl describe
+☐ Pod crash debug
+
+🔹 GÜN 17 – CrashLoop Test
+☐ Intentional crash pod
+☐ Logs & describe kontrol
+
+🔸 GÜN 18 – Multi-container advanced
+☐ Sidecar log / volume sharing
+☐ Env propagation test
+
+🔺 GÜN 19 – Deployment Strategies
+☐ RollingUpdate
+☐ Recreate
+☐ Rollback test
+
+🔻 GÜN 20 – Scaling / HPA (basic)
+☐ Deployment scale
+☐ Manual pod count adjust
+
+🔹 GÜN 21 – StatefulSet basics
+☐ StatefulSet YAML
+☐ PVC claim per pod
+
+🔸 GÜN 22 – Headless Service
+☐ StatefulSet + Headless service
+
+🔺 GÜN 23 – DaemonSet basics
+☐ DaemonSet YAML
+☐ NodeSelector test
+
+🔻 GÜN 24 – Taints / Tolerations
+☐ Pod taint toleration test
+
+🔹 GÜN 25 – Affinity / Anti-affinity
+☐ NodeAffinity
+☐ PodAffinity / AntiAffinity
+
+🔸 GÜN 26 – NetworkPolicy
+☐ Basic allow/deny pod communication
+
+🔺 GÜN 27 – Advanced ConfigMap / Secret
+☐ Immutable configmap
+☐ Secret rotation test
+
+🔻 GÜN 28 – Volume expansion
+☐ PVC resize
+☐ Pod mount test
+
+🔹 GÜN 29 – Full mini exam 1
+☐ 5–6 senaryo (Pod, Deployment, PV, Service)
+☐ Dry-run + apply + check logs
+
+🔸 GÜN 30 – Full mock exam 2 (2 saat)
+☐ Tüm CKAD konularını kapsayan 8–10 senaryo
+☐ Zaman tut
+☐ Dry-run + apply + debug
